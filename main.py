@@ -6,28 +6,28 @@ from pathlib import Path
 
 # 导入合并工具模块
 try:
-    from pdf_merge_tool import PDFMergeTool
-    from pdf_split_tool import PDFSplitTool
-    from pdf_compress_tool import PDFCompressTool
-    from pdf_encrypt_decrypt_tool import PDFEncryptDecryptTool
-    from pdf_to_word_tool import PDFToWordTool
-    from pdf_image_converter_tool import PDFImageConverterTool
-    from pdf_to_text_tool import PDFToTextTool
-    from pdf_rotate_tool import PDFRotateTool
-    from pdf_metadata_tool import PDFMetadataTool
-    from pdf_watermark_tool import PDFWatermarkTool
-    from pdf_header_footer_tool import PDFHeaderFooterTool
-    from word_to_pdf_tool import WordToPDFTool
-    from excel_to_pdf_tool import ExcelToPDFTool
-    from ppt_to_pdf_tool import PPTToPDFTool
-    from pdf_bookmark_tool import PDFBookmarkTool
-    from pdf_annotation_tool import PDFAnnotationTool
-    from pdf_form_tool import PDFFormTool
-    from pdf_batch_tool import PDFBatchTool
-    from pdf_compare_tool import PDFCompareTool
-    from pdf_ocr_tool import PDFOCRTool
-    from pdf_optimize_tool import PDFOptimizeTool
-    from pdf_signature_tool import PDFSignatureTool
+    from tools.pdf_merge_tool import PDFMergeTool
+    from tools.pdf_split_tool import PDFSplitTool
+    from tools.pdf_compress_tool import PDFCompressTool
+    from tools.pdf_encrypt_decrypt_tool import PDFEncryptDecryptTool
+    from tools.pdf_to_word_tool import PDFToWordTool
+    from tools.pdf_image_converter_tool import PDFImageConverterTool
+    from tools.pdf_to_text_tool import PDFToTextTool
+    from tools.pdf_rotate_tool import PDFRotateTool
+    from tools.pdf_metadata_tool import PDFMetadataTool
+    from tools.pdf_watermark_tool import PDFWatermarkTool
+    from tools.pdf_header_footer_tool import PDFHeaderFooterTool
+    from tools.word_to_pdf_tool import WordToPDFTool
+    from tools.excel_to_pdf_tool import ExcelToPDFTool
+    from tools.ppt_to_pdf_tool import PPTToPDFTool
+    from tools.pdf_bookmark_tool import PDFBookmarkTool
+    from tools.pdf_annotation_tool import PDFAnnotationTool
+    from tools.pdf_form_tool import PDFFormTool
+    from tools.pdf_batch_tool import PDFBatchTool
+    from tools.pdf_compare_tool import PDFCompareTool
+    from tools.pdf_ocr_tool import PDFOCRTool
+    from tools.pdf_optimize_tool import PDFOptimizeTool
+    from tools.pdf_signature_tool import PDFSignatureTool
 except ImportError:
     # 如果导入失败，创建一个占位符类
     class PDFMergeTool:
